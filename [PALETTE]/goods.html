@@ -6,6 +6,13 @@
         <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link href="./css/startbootstrap-shop-homepage-gh-pages/styles.css" rel="stylesheet" />
+
+        <!-- [상세페이지] 탭 부분 부트스트랩 -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+
         <style>
             .bi {
                 font-size: 20px;
@@ -20,17 +27,20 @@
                 padding-top: 3px;
             }
             
-            section .container{
-                padding-top: 200px;
-                padding-bottom: 200px;
+            section{
+                margin-top: 400px;
+                margin-bottom: 300px;
                 /* background-color: aquamarine; */
+            }
+            body{
+                /* background-color: #f6f9ff; */
             }
 
         </style>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-light py-4 mb-0 bg-dark">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light py-4 mb-0 bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,10 +100,11 @@
                     </div>
             </div>
         </nav>
+        <!-- <div class="row" style="margin: 200px;"></div> -->
 
-        <section class="py-0 bg-light">
+        <section class="py-0 bg-">
             <div class="container px-4 px-lg-5 my-0 bg-">
-                <div class="row gx-4 align-items-center bg-info">
+                <div class="row gx-4 align-items-center bg-">
                     <div class="col-md-6 bg-" style="text-align: center;"><img class="card-img-top mb-5 mb-md-0" style="width: 80%;" src="./img/pic_003.jpg" alt="..."></div>
                     <div class="col-md-6 py-5 bg- text-align:center">
                         <h2 class="fw-bolder mb-5">FRANCO FONTANA COLOR IN LIFE</h2>
@@ -106,8 +117,142 @@
                     </div>
                 </div>
 
-                <div class="row align-items-center bg-danger">
-                    TAP
+                <div class="row" style="margin: 150px;"></div>
+
+                <div class="row align-items-center justify-content-center bg-">
+                    <div class="card m-0 py-0 px-0 bg- " style="width: 88%;">
+                        <div class="card-body p-0 bg-">        
+                          <!-- 제목 -->
+                          <ul class="nav nav-tabs nav-tabs-bordered d-flex" id="borderedTabJustified" role="tablist">
+                            <li class="nav-item flex-fill" role="presentation">
+                              <button class="nav-link w-100 active" id="site-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-site" type="button" role="tab" aria-controls="site" aria-selected="true">
+                                예매 사이트
+                              </button>
+                            </li>
+                            
+                            <li class="nav-item flex-fill" role="presentation">
+                              <button class="nav-link w-100" id="article-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-article" type="button" role="tab" aria-controls="article" aria-selected="false">
+                                기사
+                              </button>
+                            </li>
+
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100" id="relevant-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-relevant" type="button" role="tab" aria-controls="relevant" aria-selected="false">
+                                관련 공연
+                                </button>
+                            </li>
+
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100" id="place-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-place" type="button" role="tab" aria-controls="place" aria-selected="false">
+                                    전시장
+                                </button>
+                            </li>
+  
+                          </ul>
+
+                          <!-- 내용 -->
+                          <div class="tab-content m-0 p-0 py-5 px-5 bg-" id="borderedTabJustifiedContent">
+                            <div class="tab-pane fade show active bg-" id="bordered-justified-site" role="tabpanel" aria-labelledby="site-tab">
+                                <div class="card-body py-0 m-0 bg-">                  
+                                    <table class="table table-borderless m-0 p-0 bg-">                                      
+                                      <tbody>
+                                        <tr>
+                                            <th class="pb-5"><a href="http://ticket.interpark.com/" target="_blank" class="text-">인터파크 티켓 ></a></th>
+                                        </tr>
+                                        <tr>
+                                            <th class="pb-5"><a href="http://ticket.interpark.com/" target="_blank" class="text-">티켓링크 ></a></th>
+                                        </tr>
+                                        <tr>
+                                            <th class="pb-"><a href="http://ticket.interpark.com/" target="_blank" class="text-">멜론티켓 ></a></th>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>        
+                                <!-- <div class="card-body p-0 m-0 bg- ">                  
+                                    <table class="table table-borderless mt-4 p-0 justify-content-start bg-" style="table-layout: fixed">                                      
+                                      <tbody>
+                                        <tr class="text-center">
+                                            <td><a href="http://ticket.interpark.com/" target="_blank" class="text-primary fw-bolder p-0 m-0">인터파크 티켓</a></td>
+                                            <td><a href="http://ticket.interpark.com/" target="_blank" class="text-primary fw-bolder">티켓링크</a></td>
+                                            <td><a href="http://ticket.interpark.com/" target="_blank" class="text-primary fw-bolder">멜론티켓</a></td>
+                                        </tr>                                        
+                                      </tbody>
+                                    </table>
+                  
+                                </div>         -->
+                            </div>
+
+                            <div class="tab-pane fade" id="bordered-justified-article" role="tabpanel" aria-labelledby="article-tab">
+                                rhksfusrhddus
+                            </div>
+
+                            <div class="tab-pane fade" id="bordered-justified-relevant" role="tabpanel" aria-labelledby="relevant-tab">
+                                <div class="row">
+                                    <div class="p-0 mb-5">
+                                        <div class="row gy-2 gx-2 gx-md-2 gx-lg-2 row-cols-1 row-cols-md-3 row-cols-lg-3 justify-content-center">
+                        <!-- 카드1 -->      <div class="col" >
+                                                <a class="card-link" href="./goods.html">
+                                                    <div class="card h-100 " >
+                                                        <!-- Product image-->
+                                                        <img class="card-img-top" src="./img/pic_062.jpg" alt="..." />
+                                                        <!-- Product details-->
+                                                        <div class="card-body p-4">
+                                                            <div class="text-center">
+                                                                <!-- Product name-->
+                                                                <h5 class="fw-bolder">VANISHING</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                    
+                        <!-- 카드2 -->      <div class="col" >
+                                                <a class="card-link" href="./goods.html">
+                                                    <div class="card h-100" >
+                                                        <!-- Product image-->
+                                                        <img class="card-img-top" src="./img/no_img.jpg" alt="..." />
+                                                        <!-- Product details-->
+                                                        <div class="card-body p-4">
+                                                            <div class="text-center">
+                                                                <!-- Product name-->
+                                                                <h5 class="fw-bolder">VANISHING</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                    
+                        <!-- 카드3 -->      <div class="col" >
+                                                <a class="card-link" href="./goods.html">
+                                                    <div class="card h-100" >
+                                                        <!-- Product image-->
+                                                        <img class="card-img-top" src="./img/no_img.jpg" alt="..." />
+                                                        <!-- Product details-->
+                                                        <div class="card-body p-4">
+                                                            <div class="text-center">
+                                                                <!-- Product name-->
+                                                                <h5 class="fw-bolder">VANISHING</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>                 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="bordered-justified-place" role="tabpanel" aria-labelledby="place-tab">
+                                Nesciunt totam et. Consequuntur magnam aliquid eos nulla dolor iure eos quia. Accusantium distinctio omnis et atque fugiat. Itaque doloremque aliquid sint quasi quia distinctio similique. Voluptate nihil recusandae mollitia dolores. Ut laboriosam voluptatum dicta.
+                            </div>
+
+  
+                            
+                          </div>
+                          <!-- End Bordered Tabs Justified -->
+            
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -115,7 +260,23 @@
 
 
 
+
+
+
+
+
+
+        
+
+
+
+
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>  
+
+        <!-- [상세페이지] 탭 부분 부트스트랩 -->  
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
     </body>
