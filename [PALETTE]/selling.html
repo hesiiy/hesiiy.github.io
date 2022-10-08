@@ -1,0 +1,253 @@
+<!Doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>티켓 양도</title>
+        <!-- 부트스트랩 -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- 스타트부트스트랩: CARD shop-homepage -->
+        <link href="./css/startbootstrap-shop-homepage-gh-pages/styles.css" rel="stylesheet" />
+        <!-- 폰트: 아이콘 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- 폰트: 나눔스퀘어 -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+        <style>
+            body{
+                font-family: 'NanumSquare', sans-serif;
+            }
+
+            .bi {
+                font-size: 20px;
+                color: black;
+                margin: 0; padding: 0;
+            }
+            .bi-info-circle {
+                /* color: red; */
+                font-size: 16px;
+            }
+            #info{
+                padding-top: 3px;
+            }
+
+            section {
+                margin-top: 200px;
+                margin-bottom: 200px;
+                /* background-color: antiquewhite; */
+            }
+            #title{
+              margin-bottom: 200px;
+              /* background-color: aqua; */
+            }
+            #page_btn{
+              margin-top: 50px;
+            }
+
+            #table td{
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-md fixed-top sticky-top navbar-light py-4 mb-0 bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+                <!-- #1 -->
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <a class="navbar-brand text-dark" href="./index.html">PALETTE</a>
+                </div>
+
+                <!-- #2 -->
+                <div class="navbar-collapse collapse mx-auto order-0 collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                공연
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./concert_page.html">콘서트</a>
+                                <a class="dropdown-item" href="./musical_page.html">뮤지컬</a>
+                                <a class="dropdown-item" href="./play_page.html">연극</a>
+    
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                전시
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./exhibition_page.html">전시회</a>
+                                <a class="dropdown-item" href="./museum_page.html">뮤지엄</a>
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a> -->
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">티켓</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- #3 -->
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <!--로그인--->
+                        <a class="nav-link" href="./login.html"><i class="bi bi-box-arrow-in-left"></i></a>
+                    </li>
+                    <li class="nav-item"> <!--마이페이지--->
+                        <a class="nav-link" href="./my_page.html"><i class="bi bi-person"></i></a>
+                    </li>
+                    <li class="nav-item" id="info"> <!--소개--->
+                        <a class="nav-link" href="./about.html"><i class="bi bi-info-circle"></i></a>
+                    </li>
+                    <li class="nav-item"> <!--티켓--->
+                        <a class="nav-link" href="./ticket.html"><i class="bi bi-ticket-perforated"></i></a>
+                    </li>
+                  </ul>
+                </div>
+        </div>
+      </nav>
+
+      <section class="container bg-">
+        <h3 class="text-center fw-bolder" id="title"><a href="./ticket.html" class="text-decoration-none text-dark">티켓 양도</a></h3>
+
+        <!-- 버튼 | 목록 -->
+        <div class="row">
+            <div class="col-md-2 m-0 p-0 text-center">
+                  <div class="btn-group-vertical py-5 bg-" style="white-space: nowrap;">
+                    <button type="button" onclick="location.href='./buying.html'" class="btn btn-outline-dark mb-3 px-4 py-2 rounded-pill">구해요</button>
+                    <button type="button" onclick="location.href='./selling.html'" class="btn btn-outline-dark active px-4 py-2 rounded-pill">팔아요</button>
+                  </div>
+            </div>
+    
+            <div class="col-md-10 bg-">
+              <table class="table table-hover" id="table">
+                <thead class="align-middle text-center bg-light">
+                    <th scope="col" style="vertical-align: inherit;">카테고리</th>
+                    <th scope="col" style="vertical-align: inherit;">제목</th>
+                    <th scope="col" style="vertical-align: inherit;">작성일시</th>
+                    <th scope="col" style="vertical-align: inherit;">공연명</th>
+                    <th scope="col" style="vertical-align: inherit;">공연일시</th>
+                    <th scope="col" style="vertical-align: inherit;">공연장소</th>
+                  </tr>
+                </thead>
+                <tbody class="align-middle text-center bg-">
+                  <tr>
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+                  <tr >
+                    <td style="vertical-align: inherit;">팔아요</td>
+                    <td style="vertical-align: inherit;">방탄콘 구합니다</td>
+                    <td style="vertical-align: inherit;">22.09.21</td>
+                    <td style="vertical-align: inherit;">Yet To Come</td>
+                    <td style="vertical-align: inherit;">22.10.15</td>
+                    <td style="vertical-align: inherit;">부산 아시아드 주경기장</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+
+        </div>
+
+        <!-- 페이지 버튼 -->
+        <nav id="page_btn" aria-label="Page navigation example">
+          <ul class="pagination justify-content-center" style="list-style-type: none;">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>  
+
+    </body>
+</html>
