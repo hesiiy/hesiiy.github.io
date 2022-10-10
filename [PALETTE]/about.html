@@ -2,9 +2,9 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <title>마이페이지</title>
+      <title>About Palette</title>
         <!-- 파비콘 -->
-        <link rel="icon" href="./img/favicon.png">
+        <link rel="icon" href="./img/favicon.png">     
         <!-- 부트스트랩 -->
         <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <!-- 스타트부트스트랩: CARD shop-homepage -->
@@ -14,7 +14,7 @@
         <!-- 폰트: 나눔스퀘어 -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 
-      <style>
+        <style>
             body{
                 font-family: 'NanumSquare', sans-serif;
                 background-color: #f8f9fa;
@@ -40,33 +40,14 @@
                 opacity: 80%;
             }
 
-            section {
-                margin-top: 50px;
-                margin-bottom: 200px;
-                /* background-color: antiquewhite; */
-            }
 
-            h1, h2, h3, h4, h5{
-              padding: 0;
-              margin: 0;
-            }
 
-            #table td, #table th{
-              vertical-align: middle;
-            }
-
-            #table img{
-                  padding-top: 20px;
-                  padding-bottom: 20px;
-            }
-            section a:hover{
-              font-weight: bolder;
-            }
-      </style>
+        </style>
     </head>
 
     <body>
-      <nav class="navbar navbar-expand-md     fixed-top sticky-top     navbar-dark bg-dark    py-3">
+
+    <nav class="navbar navbar-expand-md     fixed-top sticky-top     navbar-dark bg-dark    py-3">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -125,84 +106,70 @@
                     </ul>
                 </div>
         </div>
-      </nav>
+    </nav>
 
-      <section class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-    m-0 py-3     border-dark border-bottom">
-          <div class="container-fluid    bord border-    m-0 p-0">
+    <section class="container">
+        <h1 class="text-center mt-2"><a href=메인페이지>About Palette</a></h1>
 
-            <!-- 1 -->
-            <div class="bg-    mr-auto" id="navbarNav">
-                <h5>
-                  <a class="nav-link disabled text-dark">palette@gmail.com</a>
-                </h5>
-            </div>
-            <!-- 1 -->
+        <div class="row text-center">
 
+                <!-- 왼쪽 -->
+                <div class="col-5 mt-5" >
+                  <div class="jumbotron jumbotron-fluid">
+                      <div class="container" style="height: 800px;" >
+                        <h1 class="display-4 mt-5" style="height: 150px;">About Palette</h1>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="lead">팔레트는 다양한 사이트에 등록된 콘서트, 전시 등의 티켓 정보를 통합적으로 보여주는 사이트입니다.</p>
+                  </div>
+                  </div>
+                </div>
+                
+                <!-- 오른쪽 -->
+                <div class="col-7 text-center">
+                  <h3>인기 공연 / 전시</h3>
 
-            
-            <!-- 2 -->
-            <div class="text-right bg-    ">
-                <a class="nav-link text-dark" href="#">기본 정보 관리</a>
-            </div>
-            <!-- 2 -->
+                  <div class="row text-center">
+                      <div class="col">
+                            <div class="card" style="width: 15rem;">
+                              <img src="./img/no_img.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">1untitled</p>
+                              </div>
+                            </div>
+                      </div>
 
+                      <div class="col">
+                            <div class="card" style="width: 15rem;">
+                              <img src="./img/no_img.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">2untitled</p>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
 
+                  <div class="row mt-5">
+                            <div class="col">
+                              <div class="card" style="width: 15rem;">
+                                <img src="./img/no_img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">untitled</p>
+                                </div>
+                              </div>
+                            </div>
 
-            <!-- 3 -->
-            <div class="bg-">
-                <a class="nav-link text-dark" href="#">1:1 문의</a>
-            </div>   
-            <!-- 3-->
-
-
-          </div>
-        </nav>
-
-        <div class="mt-5 mb-3 px-2 bg-" style="display: flex; justify-content: space-between;">
-          <h5 onclick="location.href='./my_page.html'" style="cursor: pointer;" class="fw-bolder">최근 본 상품</h5>
-          <a id="more" onclick="location.href='./more.html'" style="cursor: pointer;">더보기</a>
+                            <div class="col">
+                              <div class="card" style="width: 15rem;">
+                                <img src="./img/no_img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">untitled</p>
+                                </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
         </div>
+    </section>
 
-        <div>    
-          <table class="table" id="table">
-                <thead class="align-middle bg-white">            
-                    <tr class="text-center">
-                      <th scope="col"></th>
-                      <th scope="col">공연명·전시명</th>
-                      <th scope="col">기간</th>
-                      <th scope="col">장소</th>
-                    </tr>
-                </thead>
-
-                <tbody class="text-center align-middle">
-                  <tr>
-                    <td class="col-3 bg- m-0 p-0" style="width:15%;"><img src="./img/pic_003.jpg" width="100%"></td>
-                    <td class="col-3 bg-">킹키부츠</td>
-                    <td class="col-3 bg-">2022.09.20<br>~<br>2022.10.30</td>
-                    <td class="col-3 bg-"><a onclick="window.open('https://www.caci.or.kr/caci/main/main.do#1')" style="cursor: pointer;">충무아트센터</a></td>
-                  </tr>
-
-                  <tr>
-                    <td class="col-3 bg- m-0 p-0" style="width:15%;"><img src="./img/no_img.jpg" width="100%"></td>
-                    <td class="col-3 bg-">Untitle</td>
-                    <td class="col-3 bg-">Untitle</td>
-                    <td class="col-3 bg-"><a onclick="window.open('#')" style="cursor: pointer;">Untitle</a></td>
-                  </tr>
-                  
-                  <tr>
-                    <td class="col-3 bg- m-0 p-0" style="width:15%;"><img src="./img/no_img.jpg" width="100%"></td>
-                    <td class="col-3 bg-">Untitle</td>
-                    <td class="col-3 bg-">Untitle</td>
-                    <td class="col-3 bg-"><a onclick="window.open('#')" style="cursor: pointer;">Untitle</a></td>
-                  </tr>
-                </tbody>
-          </table>
-        </div>
-      </section>
-
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     </body>
 </html>

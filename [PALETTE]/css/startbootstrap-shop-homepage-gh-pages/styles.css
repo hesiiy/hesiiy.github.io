@@ -239,7 +239,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  /* color: #0a58ca; */
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -4544,6 +4544,13 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  /* background-color: red; */
+}
+
+/* 카드 부분만, 올렸을 때 그림자 */
+#card-shadow:hover{
+  /* background-color: red; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.061);
 }
 
 .card-title {
