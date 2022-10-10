@@ -4547,7 +4547,7 @@ textarea.form-control-lg {
   /* background-color: red; */
 }
 
-/* 카드 부분만, 올렸을 때 그림자 */
+/* 카드 부분만, 마우스 올렸을 때 그림자 */
 #card-shadow:hover{
   /* background-color: red; */
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.061);
